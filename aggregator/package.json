@@ -1,0 +1,35 @@
+{
+  "name": "cqrs_readmodel",
+  "version": "1.0.0",
+  "description": "",
+  "author": "",
+  "main": "src/listner.js",
+  "config": {
+    "functionName": "readmodel",
+    "zipfileName": "readmodel.zip",
+    "distDirectory": "dist"
+  },
+  "scripts": {
+    "start": "cross-env devEnv=true nodemon src/listner.js",
+    "test": "jest",
+    "test-watch": "jest --watch",
+    "package": "cross-conf-env node-lambda package --packageDirectory . --functionName npm_package_config_functionName"
+  },
+  "dependencies": {
+    "aws-serverless-express": "^3.3.5",
+    "body-parser": "^1.18.3",
+    "cors": "^2.8.4",
+    "express": "^4.16.3",
+    "ioredis": "^4.2.0",
+    "request-promise-native": "^1.0.5",
+    "uuidgen": "^1.0.0"
+  },
+  "devDependencies": {
+    "cross-conf-env": "^1.1.2",
+    "cross-env": "^5.2.0",
+    "dotenv": "^6.0.0",
+    "jest": "^23.5.0",
+    "node-lambda": "^0.12.0",
+    "nodemon": "^1.18.3"
+  }
+}

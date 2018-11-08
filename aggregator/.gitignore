@@ -1,0 +1,8 @@
+node_modules
+.vscode
+package-lock.json
+*.zip
+.nyc_output
+test.js
+dist/
+.DS_Store
